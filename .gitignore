@@ -1,0 +1,77 @@
+## .gitignore tailored for recursividad.Api (ASP.NET Core / .NET 9)
+## Keep source and configuration tracked, ignore build outputs and local secrets
+
+## Build output folders (project and solution-wide)
+/bin/
+/obj/
+**/bin/
+**/obj/
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code
+.vscode/
+
+## JetBrains Rider / IntelliJ
+.idea/
+.rider/
+*.DotSettings.user
+
+## ReSharper
+_ReSharper*/
+*.ReSharper
+
+## Local run / publish outputs for .NET 9 (explicit)
+**/bin/Debug/net9.0/
+**/obj/Debug/net9.0/
+
+## Published artifacts
+publish/
+*.Publish.xml
+
+## NuGet & build artifacts
+*.nupkg
+packages/
+artifacts/
+
+## Runtime and diagnostic files
+*.deps.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+*.dll
+*.exe
+*.pdb
+*.staticwebassets.*
+
+## User secrets, logs and test results
+secrets.json
+*.log
+logs/
+TestResults/
+*.trx
+
+## OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+Icon?
+
+## Editor / tooling
+.folding
+
+## Project-specific config (ignore local env overrides)
+appsettings.Development.json
+appsettings.Local.json
+
+## Keep canonical appsettings tracked in repo
+!appsettings.json
+
+## Keep launch settings tracked (useful for debugging configurations)
+!Properties/launchSettings.json
+

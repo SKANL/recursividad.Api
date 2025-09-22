@@ -1,0 +1,14 @@
+~
+sC:\code\apiCsharp-5-Exercises\recursividad.Api\obj\Debug\net9.0\recursividad.Api.MvcApplicationPartsAssemblyInfo.csutf-8k
+`C:\code\apiCsharp-5-Exercises\recursividad.Api\obj\Debug\net9.0\recursividad.Api.AssemblyInfo.csutf-8y
+nC:\code\apiCsharp-5-Exercises\recursividad.Api\obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.csutf-8m
+bC:\code\apiCsharp-5-Exercises\recursividad.Api\obj\Debug\net9.0\recursividad.Api.GlobalUsings.g.csutf-8U
+LC:\code\apiCsharp-5-Exercises\recursividad.Api\src\Services\PuzzleService.csutf-8S
+JC:\code\apiCsharp-5-Exercises\recursividad.Api\src\Services\MathService.csutf-8^
+UC:\code\apiCsharp-5-Exercises\recursividad.Api\src\Services\Contracts\IMathService.csutf-8`
+WC:\code\apiCsharp-5-Exercises\recursividad.Api\src\Services\Contracts\IPuzzleService.csutf-8U
+LC:\code\apiCsharp-5-Exercises\recursividad.Api\src\Models\DTOs\PuzzleDtos.csutf-8S
+JC:\code\apiCsharp-5-Exercises\recursividad.Api\src\Models\DTOs\MathDtos.csutf-8\
+SC:\code\apiCsharp-5-Exercises\recursividad.Api\src\Controllers\PuzzlesController.csutf-8Y
+PC:\code\apiCsharp-5-Exercises\recursividad.Api\src\Controllers\MathController.csutf-8B
+9C:\code\apiCsharp-5-Exercises\recursividad.Api\Program.csutf-8

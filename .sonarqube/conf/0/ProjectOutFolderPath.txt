@@ -1,0 +1,1 @@
+C:\code\apiCsharp-5-Exercises\recursividad.Api\.sonarqube\out\0
