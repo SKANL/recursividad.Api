@@ -14,3 +14,7 @@ public record FibonacciResponse(List<long> Sequence);
 // Ejercicio 3: Máximo Común Divisor (MCD)
 public record McdRequest(int NumberA, int NumberB);
 public record McdResponse(int Result);
+
+// Ejercicio 6: Potencia de un número
+public record PotenciaDeUnNumeroRequest(int Base, int Exponente);
+public record PotenciaDeUnNumeroResponse(long Result);

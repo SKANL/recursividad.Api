@@ -5,7 +5,7 @@ namespace recursividad.Api.Services;
 
 public class PuzzleService : IPuzzleService
 {
-    // ... Código del Ejercicio 4 (Cambio de Monedas) ...
+    // --- Ejercicio 4: Cambio de Monedas ---
     private readonly List<(string Name, int ValueInCents)> _denominations = new()
     {
         ("100 pesos", 10000), ("50 pesos", 5000), ("20 pesos", 2000),
@@ -43,7 +43,7 @@ public class PuzzleService : IPuzzleService
         CalculateChangeRecursive(newRemainingCents, denominationIndex + 1, breakdown);
     }
 
-    // --- Ejercicio 5: Torres de Hanói (Nueva implementación) ---
+    // --- Ejercicio 5: Torres de Hanói ---
     public HanoiResponse SolveTowersOfHanoi(int numberOfDisks)
     {
         if (numberOfDisks <= 0)

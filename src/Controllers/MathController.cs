@@ -63,4 +63,20 @@ public class MathController : ControllerBase
             return BadRequest(ex.Message);
         }
     }
+
+    // --- Endpoint para Ejercicio 6: Potencia de un número ---
+    [HttpPost("potencia")]
+    public IActionResult GetPotenciaDeUnNumero([FromBody] PotenciaDeUnNumeroRequest request)
+    {
+        try
+        {
+            var result = _mathService.CalculatePotenciaDeUnNumero(request.Base, request.Exponente);
+            var response = new PotenciaDeUnNumeroResponse(result);
+            return Ok(response);
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
 }

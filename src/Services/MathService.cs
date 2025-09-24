@@ -64,4 +64,22 @@ public class MathService : IMathService
         // Paso Recursivo
         return McdRecursive(b, a % b);
     }
+
+    // --- Ejercicio 6: Potencia de un número ---
+    public long CalculatePotenciaDeUnNumero(int Base, int Exponente)
+    {
+        if (Exponente < 0)
+        {
+            throw new ArgumentException("El exponente no puede ser negativo.");
+        }
+        return PotenciaRecursive(Base, Exponente);
+    }
+
+    private long PotenciaRecursive(int Base, int Exponente)
+    {
+        // Caso Base: Cualquier número elevado a 0 es 1
+        if (Exponente == 0) return 1;
+        // Paso Recursivo
+        return Base * PotenciaRecursive(Base, Exponente - 1);
+    }
 }
