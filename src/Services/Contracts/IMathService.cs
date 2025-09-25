@@ -6,4 +6,6 @@ public interface IMathService
     List<long> GenerateFibonacci(int count);
     int CalculateMcd(int numberA, int numberB);
     long CalculatePotenciaDeUnNumero(int Base, int Exponente);
+    int CalculateSumaDigitos(int Numbers);
+    int InvertirNumeroEntero(int Number);
 }

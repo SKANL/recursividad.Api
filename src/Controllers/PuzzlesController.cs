@@ -19,29 +19,15 @@ public class PuzzlesController : ControllerBase
     [HttpPost("change-making")]
     public IActionResult GetMinimumChange([FromBody] ChangeMakingRequest request)
     {
-        try
-        {
             var response = _puzzleService.CalculateMinimumChange(request.AmountDue, request.AmountPaid);
             return Ok(response);
-        }
-        catch (ArgumentException ex)
-        {
-            return BadRequest(ex.Message);
-        }
     }
 
     // --- Endpoint para Ejercicio 5: Torres de Hanói (Nuevo) ---
     [HttpPost("towers-of-hanoi")]
     public IActionResult GetHanoiSolution([FromBody] HanoiRequest request)
     {
-        try
-        {
             var response = _puzzleService.SolveTowersOfHanoi(request.NumberOfDisks);
             return Ok(response);
-        }
-        catch (ArgumentException ex)
-        {
-            return BadRequest(ex.Message);
-        }
     }
 }

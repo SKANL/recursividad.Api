@@ -1,6 +1,7 @@
 // 1. Importamos los namespaces de nuestros servicios para que este archivo los conozca.
 using recursividad.Api.Services;
 using recursividad.Api.Services.Contracts;
+using recursividad.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,8 @@ builder.Services.AddCors(options =>
         });
 });
 
+
+
 // --- Agrega los servicios al contenedor ---
 
 // 2. Le decimos a la aplicación que vamos a usar el sistema de Controladores.
@@ -27,6 +30,10 @@ builder.Services.AddScoped<IMathService, MathService>();
 builder.Services.AddScoped<IPuzzleService, PuzzleService>();
 
 var app = builder.Build();
+
+
+//  --- Configura el Middleware personalizado para manejo global de errores ---
+app.UseMiddleware<GlobalExceptionHandler>();
 
 // --- Configura el pipeline de peticiones HTTP ---
 

@@ -82,4 +82,33 @@ public class MathService : IMathService
         // Paso Recursivo
         return Base * PotenciaRecursive(Base, Exponente - 1);
     }
+
+    // --- Ejercicio 7: Suma de los dígitos de un número ---
+    public int CalculateSumaDigitos(int Numbers)
+    {
+        // Usamos el valor absoluto para manejar números negativos
+        return SumaDigitosRecursive(Math.Abs(Numbers));
+    }
+    private int SumaDigitosRecursive(int n)
+    {
+        // Caso Base: Si el número es 0, la suma de sus dígitos es 0
+        if (n == 0) return 0;
+        // Paso Recursivo: Sumar el último dígito y llamar recursivamente con el resto del número
+        return (n % 10) + SumaDigitosRecursive(n / 10);
+    }
+
+    // --- Ejercicio 8: Invertir un número entero ---
+    public int InvertirNumeroEntero(int Number)
+    {
+        // Usamos el valor absoluto para manejar números negativos
+        int sign = Number < 0 ? -1 : 1;
+        return sign * InvertirNumeroRecursive(Math.Abs(Number), 0);
+    }
+    private int InvertirNumeroRecursive(int n, int reversed)
+    {
+        // Caso Base: Si el número es 0, devolvemos el número invertido
+        if (n == 0) return reversed;
+        // Paso Recursivo: Tomar el último dígito y agregarlo al número invertido
+        return InvertirNumeroRecursive(n / 10, reversed * 10 + n % 10);
+    }
 }
