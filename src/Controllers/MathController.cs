@@ -68,4 +68,13 @@ public class MathController : ControllerBase
                 var response = new InvertirNumeroEnteroResponse(result);
                 return Ok(response);
         }
+
+        // --- Endpoint para Ejercicio 9: Suma de los primeros N numeros enteros ---
+        [HttpPost("suma-primeros-n")]
+        public IActionResult GetSumaPrimerosNNumerosEnteros([FromBody] SumaPrimerosNNumerosEnterosRequest request)
+        {
+                var result = _mathService.CalculateSumaPrimerosNNumerosEnteros(request.N);
+                var response = new SumaPrimerosNNumerosEnterosResponse(result);
+                return Ok(response);
+        }
 }

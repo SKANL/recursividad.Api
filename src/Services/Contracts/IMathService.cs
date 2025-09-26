@@ -8,4 +8,5 @@ public interface IMathService
     long CalculatePotenciaDeUnNumero(int Base, int Exponente);
     int CalculateSumaDigitos(int Numbers);
     int InvertirNumeroEntero(int Number);
+    int CalculateSumaPrimerosNNumerosEnteros(int N);
 }

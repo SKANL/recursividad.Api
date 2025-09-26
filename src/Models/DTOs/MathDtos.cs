@@ -29,3 +29,7 @@ public record SumaDigitosResponse(int Result);
 // Ejercicio 8: Invertir un numero entero
 public record InvertirNumeroEnteroRequest(int Number);
 public record InvertirNumeroEnteroResponse(int Result);
+
+// Ejertcicio 9: Suma de los primeros N numeros enteros
+public record SumaPrimerosNNumerosEnterosRequest([MustBeNonNegative] int N);
+public record SumaPrimerosNNumerosEnterosResponse(int Result);

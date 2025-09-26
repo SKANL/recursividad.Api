@@ -14,5 +14,3 @@ public record ChangeMakingResponse(decimal TotalChange, Dictionary<string, int> 
 
 public record HanoiRequest( [MustBePositive] int NumberOfDisks);
 public record HanoiResponse(List<string> Moves);
-
-// solo es una prueba

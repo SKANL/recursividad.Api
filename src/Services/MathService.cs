@@ -111,4 +111,21 @@ public class MathService : IMathService
         // Paso Recursivo: Tomar el último dígito y agregarlo al número invertido
         return InvertirNumeroRecursive(n / 10, reversed * 10 + n % 10);
     }
+
+    // --- Ejercicio 9: Suma de los primeros N números enteros ---
+    public int CalculateSumaPrimerosNNumerosEnteros(int N)
+    {
+        if (N < 0)
+        {
+            throw new ArgumentException("N no puede ser negativo.");
+        }
+        return SumaPrimerosNNumerosRecursive(N);
+    }
+    private int SumaPrimerosNNumerosRecursive(int n)
+    {
+        // Caso Base: La suma de los primeros 0 números es 0
+        if (n == 0) return 0;
+        // Paso Recursivo: Sumar n y llamar recursivamente con n-1
+        return n + SumaPrimerosNNumerosRecursive(n - 1);
+    }
 }
